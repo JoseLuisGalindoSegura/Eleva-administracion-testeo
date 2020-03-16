@@ -226,7 +226,7 @@ img.bg-docTitle { position: absolute; top: 14px; right: 28px; z-index: 0; }
 
 .contObjInsDesplegados { max-width: 450px; margin: auto; }
 
-.detallesPeriodosShow { display: flex; flex-direction: column; font-size: 14px; color: #575757; font-weight: 400; height: 270px; transition: height 0.3s; overflow: hidden; }
+.detallesPeriodosShow { display: flex; flex-direction: column; font-size: 14px; color: #575757; font-weight: 400; height: 270px; transition: height 0.3s; overflow: hidden; overflow-y: scroll; }
 .detallesPeriodosShow--tamañoMovimiento { height: 240px; }
 .detallesPeriodosShow--none { height: 0vmax; }
 .detallesPeriodosShow .ConTexto { display: flex; justify-content: space-between; width: 100%; color: #575757; background-color: #F8F8F8; font-size: 14px; margin: 0 0 3px 0; padding: 15px 11px; }
