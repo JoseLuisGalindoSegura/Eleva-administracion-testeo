@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container container--aireBotMobile">
+        <!-- Botón "atrás" Mobile -->
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+
+        <!-- Fin Botón "atrás" Mobile -->
+
+        <div class="contTitulo contTitulo--fueraDelContenedor">
+            <h2>Estos son los objetivos de inversión<br>
+                que tiene en este momento:</h2>
+        </div>
+
+
+        <!--Contenedor general-->
+        <div class="contentBox contentBox--sinPaddingSup ">
+
+
+            <!--Barra de objetivos-->
+
+
+            <div class="contentBoxInv">
+                <!--Titulo-->
+                <div class="contTitulo">
+                    <h2>Cuándo espera lograr sus objetivos:</h2>
+                </div>
+                <!--Barra de los onjetivos-->
+                <div class=" input input--rangeSlider">
+                    <input type="range" class="barraObjetivos" id="valor-asegurar" min="28" max="134" step="1"
+                        value="0">
+                    <div class="rangeSlider__quantityNumbers"><strong
+                            class="strongMedio strongMedio--negro">2020</strong><strong
+                            class="strongMedio strongMedio--negro">2030</strong></div>
+                    <div class="contImagenesBarraObjetivos">
+                        <div class="contImagenesBarraObjetivos__imagen contImagenesBarraObjetivos__imagen--vivienda">
+                            <img src="../images/icon-vivienda.svg" alt=""></div>
+                        <p class="contImagenesBarraObjetivos__texto contImagenesBarraObjetivos__texto--1">2027</p>
+
+
+                        <!--en este caso los objetivos se encuentran unidos, para que la distancia entre ellos no aumente al hacer responsive, en caso de necesitar cada objetivo por separado, se usan los modificadores para cada uno de ellos.-->
+                        <div class="contObjMovEdu">
+                            <div class="contImagenesBarraObjetivos__imagen"><img src="../images/icon-educacion.svg"
+                                    alt=""></div>
+                            <p class="contImagenesBarraObjetivos__texto contImagenesBarraObjetivos__texto--2">2023</p>
+                            <div class="contImagenesBarraObjetivos__imagen"><img src="../images/icon-movilidad.svg"
+                                    alt=""></div>
+                        </div>
+
+                    </div>
+                    <div class="rangeSlider__quantityNumbers"><strong
+                            class="strongMedio strongMedio--centrado">Años</strong></div>
+                </div>
+            </div>
+            <!--Fin Barra objetivos-->
+
+            <hr class="barQuestion mt9">
+
+            <!--Caja de los objetivos insatisfechos-->
+
+            <div class="contObjetivoInsatisfecho" onclick="detallesObjetivo()">
+                <!--Contenedor Cabecera-->
+                <div class="contObjetivo">
+                    <div class="contObjetivoTexto">
+                        <h2 class="contObjetivoTexto__titulo">Vivienda-Compra</h2>
+                        <p class="contObjetivoTexto__parrafo">Finaliza en: Mayo de 2027</p>
+                    </div>
+                    <!--Icono vivienda-->
+                    <div class="contObjetivoIcono"></div>
+                </div>
+                <!--Fin Cabecera-->
+
+
+                <!--Texto de error-->
+                <div class="contInformacion">
+                    <img src="../images/iconoerrorobjetivos.svg" alt="">
+                    <p class="contInformacion__texto">Su objetivo está por debajo de lo esperado.<br>
+                        <strong>Revisemos juntos cómo lograrlo.</strong></p>
+                </div>
+                <!--Barra de rango-->
+                <div class="contentBoxInv contentBoxInv--percentage">
+
+                    <div class="conTextoBar">
+                        <h2 class="conTextoBar__h2">
+                            <strong>$84’800.000</strong> | 40%
+                        </h2>
+                        <h2 class="conTextoBar__h2 conTextoBar__h2--secundario">
+                            <strong> $220,000.000</strong> | 100%
+                        </h2>
+                    </div>
+                    <!--Realizar el before para el range-->
+                    <div class="input input--rangeSlider input--dobleRango">
+                        <input name="weight" type="range" min="100" max="500" step="10"
+                            style="width: 100%; background: #E6E6E6;">
+                        <div class="rangeSlider__quantityNumbers"><strong class="strongMedio">Monto
+                                actual</strong><strong class="strongMedio">Objetivo</strong></div>
+                    </div>
+                    <div class="rowFlex">
+                        <div class="col-12">
+                            <h2 class="center line17 regular customerFlex--mrgnTop"><strong> El estado al día de hoy
+                                    debería ser: </strong><br>
+                                $110.000.000<strong class="montoSmall"> | 50%</strong></h2>
+                        </div>
+                    </div>
+                </div>
+                <!--footer caja objetivos-->
+                <div class="footerObjetivos">
+                    <img src="../images/rowfooter.svg" alt="">
+                    <p class="footerObjetivos__texto">Ver objetivo</p>
+                </div>
+                <!--Fin Caja de los Objetivos insatisfechos-->
+            </div>
+
+
+            <!--Caja de los objetivos satisfechos-->
+
+            <div class="contObjetivoSatisfecho" onclick="detallesObjetivoSatisfecho()">
+                <!--Contenedor Cabecera-->
+                <div class="contObjetivo">
+                    <div class="contObjetivoTexto">
+                        <h2 class="contObjetivoTexto__titulo">Vivienda-Compra</h2>
+                        <p class="contObjetivoTexto__parrafo">Finaliza en: Mayo de 2029</p>
+                    </div>
+                    <!--Icono vivienda-->
+                    <div class="contObjetivoIcono"></div>
+                </div>
+                <!--Fin Cabecera-->
+
+
+                <!--Texto de error-->
+                <div class="contInformacion">
+                    <img src="../images/icono-check.svg" alt="">
+                    <p class="contInformacion__texto">El monto de su objetivo se encuentra <br>
+                        <strong>en la proyección esperada.</strong></p>
+                </div>
+                <!--Barra de rango-->
+                <div class="contentBoxInv contentBoxInv--percentage">
+
+                    <div class="conTextoBar">
+                        <h2 class="conTextoBar__h2">
+                            <strong>$110’100.000 </strong> | 50%
+                        </h2>
+                        <h2 class="conTextoBar__h2 conTextoBar__h2--secundario">
+                            <strong> $220,000.000</strong> | 100%
+                        </h2>
+                    </div>
+                    <!--Realizar el before para el range-->
+                    <div class="input input--rangeSlider input--sliderGraphic input--sliderGraphic--50p">
+                        <input name="weight" type="range" min="100" max="500" step="10"
+                            style="width: 100%; background: #E6E6E6;">
+                        <div class="rangeSlider__quantityNumbers"><strong class="strongMedio">Monto
+                                actual</strong><strong class="strongMedio">Objetivo</strong></div>
+                    </div>
+                </div>
+                <!--footer caja objetivos-->
+                <div class="footerObjetivos">
+                    <img src="../images/rowfooter.svg" alt="">
+                    <p class="footerObjetivos__texto">Ver objetivo</p>
+                </div>
+            </div>
+
+            <!--Fin Caja de los Objetivos satisfechos-->
+
+
+
+            <!--Caja de los objetivos satisfechos-->
+
+            <div class="contObjetivoSatisfecho" onclick="detallesObjetivoSatisfecho()">
+                <!--Contenedor Cabecera-->
+                <div class="contObjetivo">
+                    <div class="contObjetivoTexto">
+                        <h2 class="contObjetivoTexto__titulo">Vivienda-Compra</h2>
+                        <p class="contObjetivoTexto__parrafo">Finaliza en: Mayo de 2027</p>
+                    </div>
+                    <!--Icono vivienda-->
+                    <div class="contObjetivoIcono"></div>
+                </div>
+                <!--Fin Cabecera-->
+
+
+                <!--Texto de error-->
+                <div class="contInformacion">
+                    <img src="../images/icono-check.svg" alt="">
+                    <p class="contInformacion__texto">El monto de su objetivo se encuentra <br>
+                        <strong>en la proyección esperada.</strong></p>
+                </div>
+                <!--Barra de rango-->
+                <div class="contentBoxInv contentBoxInv--percentage">
+
+                    <div class="conTextoBar">
+                        <h2 class="conTextoBar__h2">
+                            <strong> $84’800.00 </strong> | 40%
+                        </h2>
+                        <h2 class="conTextoBar__h2 conTextoBar__h2--secundario">
+                            <strong> $220,000.000</strong> | 100%
+                        </h2>
+                    </div>
+                    <!--Realizar el before para el range-->
+                    <div class="input input--rangeSlider input--sliderGraphic input--sliderGraphic--40p">
+                        <input name="weight" type="range" min="100" max="500" step="10"
+                            style="width: 100%; background: #E6E6E6;">
+                        <div class="rangeSlider__quantityNumbers"><strong class="strongMedio">Monto
+                                actual</strong><strong class="strongMedio">Objetivo</strong></div>
+                    </div>
+                </div>
+                <!--footer caja objetivos-->
+                <div class="footerObjetivos">
+                    <img src="../images/rowfooter.svg" alt="">
+                    <p class="footerObjetivos__texto">Ver objetivo</p>
+                </div>
+                <!--Fin Caja de los Objetivos satisfechos-->
+            </div>
+
+
+
+
+        </div>
+        <!--Fin Contenedor general-->
+
+    </section>
+
+    <!--Botones footer-->
+    <div class="buttonFooterMobile">
+        <a href="javascript:void(0)" class="support support--duoBotones support--duoBotones--left">
+            <img src="../images/Icono-boton-footer-grafica.svg" alt="Devolver Operacion">
+            <p class="buttonFooterMobile__texto">Compartir PIN</p>
+        </a>
+
+        <a href="javascript:void(0)" class="support support--duoBotones support--duoBotones--right">
+            <img src="../images/Icono-boton-footer-alcancia.svg" alt="Liquidacion">
+            <p class="buttonFooterMobile__texto">Liquidación</p>
+        </a>
+    </div>
+
+    <!--Screipt detalles Objetivos-->
+    <script src="../js/main.js">
+    </script>
+
+</body>
+
+</html>

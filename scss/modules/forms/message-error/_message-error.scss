@@ -1,0 +1,19 @@
+.wrapper-error {
+    width: 100%;
+    .error-input {
+        font-size: 12px;
+        display: flex;
+        color: #575757;
+        transform: translateX(3px);
+        font-weight: bold;
+        margin: 5px 0 12px 0;
+        &--errorRight {
+            justify-content: flex-end;
+            transform: translateX(0);
+        }
+        //forzar margin botton
+        &--last{
+            margin-bottom: 0;
+        }
+    }
+}

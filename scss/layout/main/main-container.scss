@@ -1,0 +1,45 @@
+//Containers - Importante en todo los flujos - Contenedor principal
+.container {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    padding: 0 10px;
+
+    //se usa esta clase para dar aire entre el contenido y los botones mobile
+    &--aireBotMobile {
+        margin: 0 auto 86px auto;
+        max-width: 450px;
+    }
+
+    //Info user
+
+    &.container--maxWidth {
+        max-width: 470px;
+    }
+
+    &--noPadding {
+        padding: 0;
+    }
+
+    //Fluid Atencion en Línea / Support
+    &--Fluid {
+        padding-bottom: 110px;
+    }
+
+    &--Kangaroo {
+        padding-bottom: 110px;
+    }
+
+    .container--intBackGray {
+        display: block;
+        max-width: 650px;
+        padding: 20px;
+        margin: auto;
+        background-color: $gris-ed;
+        border-radius: 10px;
+    }
+}

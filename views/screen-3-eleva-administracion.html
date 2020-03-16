@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Davivienda S.A.</title>
+</head>
+
+<body>
+  <section class="container">
+    <!-- Botón "atrás" Mobile -->
+    <a href="javascript:void(0)" class="backButton">
+      <span class="icon-dv-btnBack"></span>
+      Atrás
+    </a>
+    <!-- Fin Botón "atrás" Mobile -->
+
+    <!-- Contenedor del conoslidado -->
+
+    <div class="contPestañas">
+      <div class="contPestañas_montoConsolidado" id="pestañaMonto" onclick="monto()">
+        <p id="pmonto">Monto consolidado</p>
+      </div>
+      <div class="contPestañas_distribucionInversion" id="pestañaDistribucion" onclick="distribucion()">
+        <p id="pdistribucion">Distribución inversión</p>
+      </div>
+
+    </div>
+
+    <div class="contentBox contentBox--contDetallesConsolidados contentBox--visible" id="monto">
+
+      <div class="benefits__container benefits__container--encabezado">
+        <!-- Item Beneficios y Caracteristicas -->
+        <div class="benefits__item benefits__item--marginDetallesConsolidados">
+          <img class="benefits__imgFlechaDerecha" src="../images/icono-flecha-derecha.svg" alt="Beneficio">
+          <p class="benefits__texto">
+            <strong>Monto actual</strong> de su objetivo de vivienda: <br>
+          </p>
+        </div>
+        <p class="valorGrande">$194.200.000</p>
+      </div>
+
+      <!-- Contenedor de los detalles del conoslidado -->
+      <div class="benefits__container benefits__container--contDetalles">
+
+        <!-- Item Beneficios y Caracteristicas -->
+
+        <div class="benefits__item benefits__item--marginDetallesConsolidados">
+          <img class="benefits__imgFlechaDerecha" src="../images/icono-flecha-derecha.svg" alt="Beneficio">
+          <p class="benefits__texto">
+            <strong>Movimientos consolidados</strong> de su inversión:
+          </p>
+        </div>
+
+        <div class="benefits__item benefits__item--marginDetallesConsolidados">
+          <img src="../images/IconoDetallesManoAbajo.svg" alt="Beneficio">
+          <p>
+            Inversión inicial: <br> <strong>$12.720.000</strong>
+          </p>
+        </div>
+        <!-- Fin Item Beneficios y Caracteristicas -->
+        <div class="benefits__item benefits__item--marginDetallesConsolidados">
+          <img src="../images/IconoDetallesCalendario.svg" alt="Beneficio">
+          <p>
+            Aportes mensuales: <br> <strong>$27.984.000</strong>
+          </p>
+        </div>
+
+        <div class="benefits__item benefits__item--marginDetallesConsolidados">
+          <img src="../images/iconoDetallesManoArriba.svg" alt="Beneficio">
+          <p>
+            Aportes extraordinarios: <br> <strong>$23.744.000</strong>
+          </p>
+        </div>
+
+        <div class="benefits__item benefits__item--marginDetallesConsolidados">
+          <img src="../images/IconoDetallesBolsaDinero.svg" alt="Beneficio">
+          <p>
+            Rendimientos generados: <br> <strong>$20.352.000</strong>
+          </p>
+        </div>
+
+        <div class="benefits__item benefits__item--marginDetallesConsolidados">
+          <img src="../images/IconoDetallesBolsaDinero.svg" alt="Beneficio">
+          <p>
+            Retiros realizados: <br> <strong>10.352.000</strong>
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+    <!-- Fin Contenedor de consolidado -->
+
+
+    <div class="contentBox contentBox--contDetallesConsolidados contentBox--oculto" id="distribucion">
+      <div class="contentBoxInv contentBoxInv--percentage contentBoxInv--noPadding contentBoxInv--marginBottom15">
+        <div class="d-flex justifyCenter alingCenter">
+          <div class="col10"><img src="../images/icon-F-ArrowRight.svg" alt="" class="iconItem"></div>
+          <div class="col90">
+            <h2 class="regular mrgnTopBotton">Su dinero será invertido en el <strong>Fondo Voluntario de Pensiones
+                Dafuturo.</strong>
+              <a href="javascript:void(0)" class="buttonTooltip buttonTooltip--small" style="position: relative;">
+                <span class="icon-dv-tooltipInfo"></span>
+              </a>
+              <div class="tooltip tooltip--top">
+                <p>
+                  Usted abrirá una cuenta invidivdual en el Fondo en el Fondo Voluntario de Pensiones de Jubilación y/o
+                  invalidez Dafuturo. <br> <br>
+                  Los productos de inversión son administrados por Fiduciaria Davivienda y distribuidos por Banco
+                  Davivienda en virtud del contrato de red.
+                </p>
+              </div>
+            </h2>
+          </div>
+        </div>
+
+        <!-- Caja Gris -->
+        <div class="contentBoxInv contentBoxInv--percentage contentBoxInv--noPadding contentBoxInv--marginBottom15">
+
+          <div class="d-flex justifyCenter alingCenter">
+            <div class="col10"><img src="../images/icon-F-ArrowRight.svg" class="iconItem" alt=""></div>
+            <div class="col90">
+              <h2 class="regular mrgnTopBotton">En Dafuturo, su inversión se <strong>distribuirá de la siguiente
+                  manera:</strong>
+                <a href="javascript:void(0)" class="buttonTooltip buttonTooltip--small" style="position: relative;">
+                  <span class="icon-dv-tooltipInfo"></span>
+                </a>
+                <div class="tooltip">
+                  <p>
+                    Alternativas que conforman el Dafuturo y en los cuales se distribuirá su cuenta individual.
+                  </p>
+                </div>
+              </h2>
+            </div>
+          </div>
+          <img src="../images/componente_Graf.png" alt=""
+            style="width: 100%; max-width: 250px; display: block; margin: 0 auto;">
+          <a href="" class="link-image link-image--Top20">
+            Descargar detalle de la recomendación profesional
+            <img src="../images/arrow-red-download.svg" class="link-image--img-download">
+          </a>
+
+          <hr class="barQuestion mt9">
+
+          <h2 class="regular mrgnTopBotton  small12 center padding40">Rentabilidad histórica de los últimos 5 años del
+            portafolio:<strong>5.6% E.A</strong>
+            <a href="javascript:void(0)" class="buttonTooltip buttonTooltip--small" style="position: relative;">
+              <span class="icon-dv-tooltipInfo"></span>
+            </a>
+            <div class="tooltip">
+              <p>
+                Importante: Rentabilidades pasada no garantizan rentabilidades futuras.
+              </p>
+            </div>
+          </h2>
+
+        </div>
+        <!-- End Caja Gris -->
+      </div>
+      <!--Contenedor Grafica Barra-->
+      <div class="graficaBarra graficaBarra--distribucionInversion" id="graficaBarra" style="display:none;">
+
+        <div class="graficaBarra__contLeyend graficaBarra__contLeyend--primerTexto">
+          <img src="../images/icon-F-ArrowRight.svg" alt="">
+          <h2 class="graficaBarra__text graficaBarra__text--header">
+            Este es el comportamiento de la <strong>rentabilidad de su inversión:</strong> </h2>
+        </div>
+
+
+        <img class="graficaBarra__imagenGrafica" src="../images/grafica-sin-leyenda.png">
+
+        <div class="graficaBarra__contLeyend">
+          <div class="graficaBarra__contLeyend graficaBarra__contLeyend--primary">
+            <img src="../images/icono-rojo-leyend.svg" alt="">
+            <h2 class="graficaBarra__text">
+              <strong>Monto alcanzado <br> de la inversión</strong></h2>
+          </div>
+          <div class="graficaBarra_contLeyend graficaBarra__contLeyend--secondary">
+            <img src="../images/icon-estrella-grafica.svg" alt="">
+            <h2 class="graficaBarra__text">
+              <strong>Objetivo<br> de la inversión</strong></h2>
+          </div>
+        </div>
+
+        <hr class="barQuestion barQuestion--barGraficaEnd">
+      </div>
+
+      <!-- Este es el boton de despliegue de la grafica-->
+
+      <div class="collapsedInv">
+        <a href="javascript:void(0)" class="optionCard__seeMore clicked optionCard__seeMore--grafButton-show"
+          id="seemore--secondCard" onclick="graficaBarraBoxShow()" style="display: block;"> <span
+            class="icon-dv-arrowDownBG icon customerIconsGraf"></span>
+          Ver gráfica de proyección</a>
+        <a href="javascript:void(0)" class="optionCard__seeMore clicked optionCard__seeMore--grafButton-hide"
+          id="seeless--secondCard" style="display: none;" onclick="graficaBarraBoxHide()"> <span
+            class="icon-dv-arrowDownBG icon icon--isToggle customerIconsGraf rotate180IconsGraf"></span>Ocultar gráfica
+          de proyección</a>
+      </div>
+    </div>
+
+    <!-- Fin Formularios -->
+
+
+
+    <!--Movimientos por periodo-->
+
+
+    <!--Contenedor para los detalles del cosolidado.-->
+    <div class="contentBox contentBox--sinPaddingSup">
+      <div class="benefits__container">
+        <div class="benefits__item benefits__item--DirColum">
+          <h2>Movimientos por periodo</h2>
+          <p>Seleccione el periodo del cual desea consultar los <br>
+            movimientos y <strong> descargar el reporte de su objetivo.</strong></p>
+        </div>
+      </div>
+      <div class="input input--mrgBtnMedium">
+        <select name="periodo" id="periodo" onchange="ShowSelected();">
+          <option value="" disabled selected>Seleccione el periodo…</option>
+          <option value="1">Diciembre 2019</option>
+          <option value="2">Noviembre 2019</option>
+          <option value="3">Octubre 2019</option>
+        </select>
+      </div>
+      <div class="detallesPeriodosShow detallesPeriodosShow--none" id="detPeriodo">
+        <!--Contenedor de los detalles del periodo-->
+        <div class="ConTexto ConTexto--margenTop ">
+          <p class="ConTexto__fecha">07/12/2019</p>
+          <p class="ConTexto__valor">Aporte extraordinario <br>
+            <strong>$810.000</strong></p>
+        </div>
+        <div class="ConTexto">
+          <p class="ConTexto__fecha">06/12/2019</p>
+          <p class="ConTexto__valor">Rendimiento generado <br>
+            <strong>$690.000</strong></p>
+        </div>
+        <div class="ConTexto">
+          <p class="ConTexto__fecha">02/12/2019</p>
+          <p class="ConTexto__valor">Aporte extraordinario <br>
+            <strong>$1’140.000</strong></p>
+        </div>
+        <div class="ConTexto">
+          <p class="ConTexto__fecha">01/12/2019</p>
+          <p class="ConTexto__valor">Aporte extraordinario <br>
+            <strong>$6’000.000</strong></p>
+        </div>
+
+      </div>
+    </div>
+
+    <!--modal-->
+
+
+    <!-- Contenedor y Botones genericos - Siempre poner los botones dentro de contButtons -->
+    <div class="contButtons contButtons">
+      <button type="button" class="button button--secondary button--back">Regresar</button>
+      <button type="button" id="descargaReporte" class="button button--secondary">Descargar reporte</button>
+    </div>
+    <!-- Contenedor y Botones genericos -->
+
+  </section>
+
+  <!--Screipt detalles Objetivos-->
+  <script src="../js/inversion.js"></script>
+  <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>

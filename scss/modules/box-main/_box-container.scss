@@ -1,0 +1,843 @@
+//Container Box - Shadows - Padding - Background
+hr {
+    margin-top: 15px;
+    background: $negro-57;
+    color: $negro-57;
+    width: 219px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barCarguro {
+    transform: translateY(-10px) !important;
+    background: #d2cece !important;
+    margin-top: 15px !important;
+    width: 100% !important;
+    max-width: 283px;
+    height: 1px;
+}
+
+.barQuestion {
+    background: #d2cece !important;
+    margin: 10px auto 10px auto;
+    width: 80% !important;
+    max-width: 219px;
+    height: 1px;
+    opacity: .6;
+
+
+
+    &--barraSlider {
+        margin: 15px auto 15px auto;
+    }
+
+
+
+
+    //eliminar margin top 
+    &--noMarginTop {
+        margin-top: 0;
+    }
+
+    &.barQuestion--Aportes {
+        margin: 17px auto 15px auto !important;
+    }
+
+    &.mt15 {
+        margin-top: 15px !important;
+    }
+
+    &.mt23 {
+        margin-top: 23px !important;
+    }
+
+    &.mb20 {
+        margin-bottom: 20px !important;
+    }
+
+    &.barQuestion--mt12 {
+        margin-top: 12px !important;
+    }
+
+    &.mt9 {
+        margin-top: 9px !important;
+    }
+
+    &--barGrafica {
+        margin: 0 auto 15px auto;
+    }
+
+    &--barGraficaEnd {
+        margin: 0 auto 0 auto;
+    }
+
+}
+
+.bg-whiteQuestions {
+    display: none;
+    background: $blanco-ff;
+    width: 95%;
+    margin: auto;
+    padding: 18px 9px 7px 7px;
+    border-radius: 0 0 20px 20px;
+    @include prefix((box-shadow: 1px 3px 5px #0000002b), webkit moz ms);
+
+    &.d-block {
+        margin-bottom: 0;
+        display: block;
+        transform: translateY(-3px);
+    }
+}
+
+.contentWhiteImage {
+    background: $blanco-ff;
+    margin-top: 64px;
+    width: 335px;
+    height: 246px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+    position: relative;
+    border-radius: 8px;
+    @include prefix((box-shadow: 1px 3px 5px #0000002b), webkit moz ms);
+
+    .contentImg {
+        position: absolute;
+        left: 0;
+        height: 246px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            height: 246px;
+            border-radius: 8px 0px 0px 8px;
+        }
+    }
+
+    .contentText {
+        width: 66%;
+        position: absolute;
+        right: 0;
+        padding: 0 15px 0 0px;
+        height: 246px;
+    }
+
+}
+
+.contentBox {
+    display: inline-block;
+    border-radius: 6px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+    position: relative;
+    padding: 15px;
+    background-color: $blanco-f8;
+    border-radius: 7px;
+
+    //Este modificador se usa para ajustar la distancia entre la cabecera y el texto.
+
+    &--sinPaddingSup {
+        margin: 0 0 0 0;
+        width: 100%;
+        background: $blanco-fd;
+    }
+
+    &--ajusCabecera {
+        width: 100%;
+        background: $blanco-fd;
+        padding: 106px 15px 15PX 15px;
+    }
+
+    &--ajusteBotonMoblie {
+        width: 100%;
+        background: $blanco-fd;
+
+    }
+
+    &--contDetallesConsolidados {
+        width: 100%;
+        background: $blanco-fd;
+        margin: 0 0 15px 0;
+        padding: 15px 0 15px 0;
+        border-radius: 0 0 7px 7px;
+    }
+
+    //Este modificador elimina los estilos del contenedor y se usa para las secciones externas al contenido general de la pantalla (botones y texto entre otras)
+    &--sinEstilos{
+        padding: 0 0 0 0;  
+        margin: 0;
+        border: 0px ;
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: none;
+        p   {
+            font-size: $font-p;
+            font-weight: 400;
+            line-height: 14px;
+            color: $negro-57;
+            
+        }
+        strong{
+            font-weight: bold;
+        }
+
+    }
+
+    //Este modificador es para el contenedor de retiros
+
+    &--retiros{
+        width: 100%;
+        background: $blanco-f8; 
+    }
+
+    //Se usa para mostrar y ocultar las paginas del screen 3
+    &--visible {
+        display: block;
+
+    }
+
+    &--oculto {
+        display: none;
+    }
+
+    //fin de la funsion mostrar y ocultar
+
+
+    &--pdngBottonDefault {
+        padding-bottom: 15px !important;
+    }
+
+    &.contentBox--fullWidth {
+        width: 100% !important;
+    }
+
+    &.contentBox--Bg-Fd {
+        background: $blanco-fd;
+    }
+
+    &.contentBox--maxWidth {
+        max-width: 450px;
+    }
+
+    &.contentBox--noMrg {
+        margin: 0 0 0 0;
+    }
+
+
+
+    .contentBoxInv {
+        background: $blanco-f8;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 17px 10px;
+        position: relative;
+
+        &--noPadding {
+            padding: 0 !important;
+        }
+
+        &.contentBoxInv--marginBottom15 {
+            margin-bottom: 15px;
+        }
+
+        &.contentBoxInv--percentage {
+            padding: 15px 6px 8px 6px;
+
+            .img-percentage {
+                margin-bottom: 7px;
+            }
+        }
+
+        &.pdngPercentage {
+            padding: 4px 7px;
+            margin-bottom: 8px;
+            width: 95%;
+            max-width: 307px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url("../../../images/grupo.svg");
+
+            &.pdngPercentage--mb {
+                margin-bottom: 15px;
+            }
+        }
+
+        .d-flex {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+
+            &.justifyCenter {
+                justify-content: center;
+            }
+
+            &.alingCenter {
+                align-items: center;
+            }
+
+            .col10 {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .col90 {
+                width: 90%;
+                padding-right: 20px;
+            }
+
+            .contentFlex--widthFavoriteOne {
+                width: 69%;
+            }
+
+            .contentFlex--secondary {
+                width: 1%;
+            }
+
+            .contentFlex {
+                align-items: center;
+
+                .rowSuggestion {
+                    display: flex;
+                    width: 85px;
+                    margin-left: 32px;
+                }
+
+                .circle-percentage {
+                    position: relative;
+                    width: 49px;
+                    transform: translateX(60%);
+                }
+
+                .bg-suggestion {
+                    position: absolute;
+                    z-index: 0;
+                    transform: translate(23%, -3px);
+                }
+            }
+        }
+
+
+        .optionSuggestion {
+            background: white;
+            font-size: 10px;
+            border-radius: 50px;
+            border: 1px solid #707070;
+            left: 30px;
+            color: red;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+
+            &.optionSuggestion--absolute {
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translate(33px, 7px);
+            }
+
+            &.optionSuggestion--secondary {
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translate(7px, 17px);
+            }
+
+        }
+    }
+
+    .d-none {
+        display: none;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    &.contBox--fullWhiteFd {
+        width: 100%;
+        background-color: $blanco-ff;
+        padding: 15px 15px 24px 15px;
+        max-width: 431px;
+    }
+
+    &.noPaddingBottom {
+        padding-bottom: 0;
+        padding: 15px 25px;
+    }
+
+    &.box-question {
+        padding: 15px 15px;
+    }
+
+    .graficaBarra {
+        display: block;
+        width: 95%;
+        max-width: 300px;
+        margin: 15px auto 0;
+
+        &--distribucionInversion {
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 15px 15px 15px;
+            background-color: #F8F8F8;
+            width: 100%;
+            max-width: initial;
+
+        }
+
+        //texto contenido en barra grafica
+        .graficaBarra__text {
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 0;
+
+            &--header {
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+
+        .graficaBarra__contLeyend {
+            display: flex;
+            justify-content: space-between;
+            max-width: 322px;
+            width: 100%;
+            padding: 0 12px;
+
+            &--primary {
+                display: grid;
+                width: 45%;
+                h2 {
+                    margin-top: 5px;
+                }
+            }
+
+            &--secondary {
+                display: grid;
+                width: 30%;
+                h2 {
+                    margin-top: 5px;
+                }
+            }
+
+            //Se crea este modificador para el texto correspondiente a la screen 3 en la grafica desplegada.
+            &--primerTexto {
+                justify-content: start;
+                align-items: baseline;
+                padding: 0;
+                max-width: 100%;
+
+                img {
+                    width: 6px;
+                }
+
+                h2 {
+                    text-align: left;
+                    margin-left: 10px;
+                    font-size: $font-p;
+                }
+            }
+        }
+
+        .graficaBarra__imagenGrafica {
+            padding: 0;
+            margin: 0 auto 15px auto;
+            border: 0;
+        }
+
+    }
+
+    &.mrgTop {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+
+    @include prefix((box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15)), webkit moz ms);
+
+    transition-duration: .2s;
+
+    &--boxConfirm {
+        padding-top: 40px !important;
+    }
+
+    &--noBackg {
+        background-color: transparent;
+        box-shadow: inherit;
+    }
+
+    &--noPadding {
+        padding: 0;
+    }
+}
+
+img {
+    &.bg-docTitle {
+        position: absolute;
+        top: 14px;
+        right: 28px;
+        z-index: 0;
+    }
+}
+
+.rowInv {
+    display: flex;
+    max-width: 286px;
+    width: 100%;
+    height: 19px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    .colInv {
+        &.m-left {
+            margin-left: 27px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: lighter;
+        }
+    }
+}
+
+//Contenedor de los objetivos
+
+.contObjetivo {
+    //imagen background vivienda (esta es la imagen de fondo del contenedor de onjetivos)
+    background-image: url(../images/imagen-vivienda-cabecera.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 50% 7px;
+    border-bottom-right-radius: 50% 7px;
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    position: relative;
+
+    &--fullwith {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    //Este es el contenedor del icono ubicado al costado superior derecho
+    .contObjetivoIcono {
+        width: 40px;
+        height: 40px;
+        //Esta es la imagen correspondiente al icono ubicado al costado derecho
+        background-image: url(../images/iconoViviendaObjetivo.svg);
+        background-repeat: no-repeat;
+        background-position-x: 1px;
+        background-position-y: -6px;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+    }
+
+    //Fin contenedor icono
+
+    //Contenedor con los textos del objtivo
+    .contObjetivoTexto {
+        width: 100%;
+
+        .contObjetivoTexto__titulo {
+            color: $blanco-f8;
+            font-family: $roboto;
+            font-size: $font-p + 4;
+            font-weight: bold;
+            text-align: left;
+            margin: 15px 0 5px 15px;
+
+            &--desplegado {
+                text-align: center;
+                margin: 15px 0 5px 0;
+            }
+        }
+
+        .contObjetivoTexto__parrafo {
+            font-size: $font-p - 2;
+            font-weight: 400;
+            margin: 0 0 20px 15px;
+            color: $blanco-f8;
+            font-family: $roboto;
+            text-align: left;
+            line-height: 16px;
+
+            &--desplegado {
+                text-align: center;
+                margin: 0 0 20px 0;
+            }
+        }
+
+    }
+}
+
+//fin cont textos
+
+//Contenedor de los titulos
+.contTitulo {
+    widows: 100%;
+
+    h2 {
+        color: $negro-44;
+        text-align: center;
+        margin: 0 0 23px 0;
+        font-size: $font-p - 2;
+    }
+
+    &--fueraDelContenedor {
+        h2 {
+            margin: 10px 0 13px 0;
+        }
+    }
+
+}
+
+//Contenedor de la informacion de los objetivos
+.contInformacion {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10px auto 0 auto;
+    ;
+    height: 30px;
+    max-width: 400px;
+    min-width: 246px;
+
+    //se usa este modificador para el texto separado bajo la cabecera
+    &--espacio {
+        width: 90%;
+        height: auto;
+        margin: 0 0 0 12px;
+        justify-content: space-between;
+    }
+
+    .contInformacion__texto {
+        font-size: $font-p - 2;
+        font-weight: 400;
+        text-align: center;
+        margin-left: 5px;
+        color: $negro-57;
+
+        &--espacio {
+            text-align: left;
+        }
+
+        &--fuente14 {
+            font-size: $font-p;
+        }
+    }
+
+    //Se usa el modificador para ajustar el texto a la izquierda-
+    &--ajustadoIzq {
+        justify-content: flex-start;
+        margin: 2px 0 0 0;
+    }
+
+    img {
+        position: relative;
+        top: -8px;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+}
+
+.conTextoBar {
+    display: flex;
+    position: relative;
+
+    .conTextoBar__h2 {
+        margin: 0;
+        font-size: $font-p - 4;
+        font-weight: 400;
+
+        strong {
+            font-size: $font-p - 2;
+            font-weight: 500;
+        }
+
+        &--secundario {
+            text-align: right;
+        }
+    }
+
+}
+
+.footerObjetivos {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: $negro-57;
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+
+    .footerObjetivos__texto {
+        font-size: $font-p - 4;
+        font-weight: 400;
+        color: $blanco-ff;
+        margin-left: 5px;
+    }
+}
+
+
+
+
+//Fin Contenedor Objetivos
+
+//Contenedor objetivos desplegados
+.contenTexObjDesplegado {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 15px 6px 8px 6px;
+    position: relative;
+}
+
+//Contenedor de la cabecera correspondiente al chack box para los objetivos desplegados
+.contCabeceraCheckbox {
+    display: flex;
+    margin: 8px 0 13px 0;
+
+    img {
+        width: 10px;
+        height: 14px;
+        margin: 0 9px 0 0;
+    }
+
+}
+
+//margen de los objetivos
+
+.contObjetivoSatisfecho {
+    margin: 15px 0 0 0;
+}
+
+.contObjetivoInsatisfecho {
+    margin: 15px 0 0 0;
+}
+
+
+.contObjInsDesplegados {
+    max-width: 450px;
+    margin: auto;
+}
+
+// Esta es la clase de los detalles de periodo 
+
+.detallesPeriodosShow {
+    display: flex;
+    flex-direction: column;
+    font-size: $font-p;
+    color: $negro-57;
+    font-weight: 400;
+    height: 270px;
+    transition: height 0.3s;
+    overflow: hidden;
+    &--tamañoMovimiento{
+        height: 240px;
+    }
+
+    &--none{
+        height: 0vmax;
+    }
+
+    .ConTexto {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: $negro-57;
+        background-color: $blanco-f8;
+        font-size: $font-p;
+        margin: 0 0 3px 0;
+        padding: 15px 11px;
+        .ConTexto_cabecera{
+            margin: 0 auto 0 auto ;
+        }
+
+        &--cabeceraMovimientos{
+            padding: 0 0 0 0;
+            font-size: $font-p - 2;
+        }
+        &--margenTop{
+            margin-top: 15px;
+        }
+
+        .ConTexto__valor {
+            text-align: right;
+        }
+        strong {
+            font-weight: bold;
+        }
+    }
+
+}
+
+//Se usan estas clases para crear los botones 
+.contPestañas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    height: 34px;
+    font-size: $font-p;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 27px auto 0 auto;
+
+    .contPestañas_montoConsolidado {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $blanco-fd;
+        border-radius: 7px 7px 0 0;
+        width: 49%;
+
+        p {
+            color: $negro-57;
+            font-size: 14;
+            font-weight: bold;
+        }
+
+        /*&::before {
+            content: '';
+            position: absolute;
+            background-color: rgba(204, 204, 204, 0.5);
+            width: 47%;
+            height: 34px;
+            border-radius: 7px 7px 0 0;
+            right: var(--posicion);
+
+        }*/
+    }
+
+    .contPestañas_distribucionInversion {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $blanco-fd;
+        border-radius: 7px 7px 0 0;
+        width: 49%;
+        background-color: $gris-cc;
+
+        p {
+            color: $negro-57;
+            font-size: 14;
+            font-weight: bold;
+            opacity: 0.6;
+        }
+    }
+}

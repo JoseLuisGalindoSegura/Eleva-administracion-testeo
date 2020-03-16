@@ -1,0 +1,64 @@
+//Botón atención en línea
+.support{
+    @include prefix((
+        display: flex,
+        flex-direction: column,
+        align-items: center,
+        align-content: center,
+        justify-content: center
+    ), webkit moz ms);
+    width: 100%;
+    height: 90px;
+    background-color: $gris-cd;
+    text-align: center;
+    box-shadow: -20px 2px 16px $gris-a7;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+
+    &--duoBotones{
+        box-shadow: none;
+        position: relative;
+        height: 67px;
+        width: 49.7%;
+    }
+
+    &--trioBotones{
+        box-shadow: none;
+        position: relative;
+        height: 64px;
+        width: 33%;
+        
+        &--right{
+            right: 0;
+        }
+    
+        &--left{
+            left: 0;
+        }
+
+        &--trio{
+            position: relative;
+            box-shadow: none;
+            height: 67px;
+
+            p{
+                font-size: $font-p - 3;
+                margin-top: 11px;
+            }
+        }
+    }
+
+    span{
+        display: inline-block;
+        padding: 5px 0;
+        font-size: $font-p;
+        color: $negro-57;
+        &:first-of-type{
+            font-size: $font-p + 20;
+        }
+    }
+}

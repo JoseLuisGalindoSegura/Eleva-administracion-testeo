@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Davivienda S.A.</title>
+</head>
+
+<body>
+    <section class="container container--aireBotMobile">
+        <!-- Botón "atrás" Mobile -->
+        <a href="javascript:void(0)" class="backButton">
+            <span class="icon-dv-btnBack"></span>
+            Atrás
+        </a>
+        <!-- Fin Botón "atrás" Mobile -->
+
+        <!--Caja de los objetivos insatisfechos desplegados-->
+        <div class="contObjInsDesplegados">
+            <!--Se usa este modificador para ajustar el tamaño de la cabecera-->
+            <div class="contentBox contentBox--ajusCabecera">
+                <div class="contObjetivo contObjetivo--fullwith">
+                    <div class="contObjetivoTexto">
+                        <h2 class="contObjetivoTexto__titulo contObjetivoTexto__titulo--desplegado">Vivienda-Compra</h2>
+                        <p class="contObjetivoTexto__parrafo contObjetivoTexto__parrafo--desplegado">Finaliza en: Mayo
+                            de 2029</p>
+                    </div>
+                    <!--Icono vivienda-->
+                    <div class="contObjetivoIcono"></div>
+                </div>
+
+                <!--Texto de error-->
+                <div class="contenTexObjDesplegado">
+                    <div class="contInformacion contInformacion--ajustadoIzq">
+                        <img src="../images/icono-flecha-derecha.svg" alt="">
+                        <p class="contInformacion__texto contInformacion__texto--fuente14">Condiciones actuales de su
+                            objetivo:</p>
+                    </div>
+
+                    <div class="contInformacion contInformacion--espacio" onclick="">
+                        <p class="contInformacion__texto contInformacion__texto--espacio">Aporte <br>
+                            mensual: <br>
+                            <strong>$350.000</strong>
+                        </p>
+
+                        <p class="contInformacion__texto contInformacion__texto--espacio">Riesgo de la <br>
+                            inversión: <br>
+                            <strong>Medio</strong>
+                        </p>
+
+                    </div>
+                </div>
+
+                <!--hr de separacion-->
+                <hr class="barQuestion mt9">
+
+                <!--Barra de rango-->
+                <div class="contentBoxInv contentBoxInv--percentage">
+                    <!--Se usa el modificador para ajustar el texto a la izquierda-->
+                    <div class="contInformacion contInformacion--ajustadoIzq">
+                        <img src="../images/icono-flecha-derecha.svg" alt="">
+                        <p class="contInformacion__texto contInformacion__texto--fuente14">Este es el <strong>estado
+                                actual</strong> del objetivo:</p>
+                    </div>
+
+                    <div class="conTextoBar">
+                        <h2 class="conTextoBar__h2">
+                            <strong>$84’800.000</strong> | 40%
+                        </h2>
+                        <h2 class="conTextoBar__h2 conTextoBar__h2--secundario">
+                            <strong> $220,000.000</strong> | 100%
+                        </h2>
+                    </div>
+                    <!--Realizar el before para el range-->
+                    <div class="input input--rangeSlider input--sliderGraphic input--dobleRango">
+                        <input name="weight" type="range" min="100" max="500" step="10" class="appearanceMediaSlider"
+                            style="width: 100%; background: #E6E6E6;">
+                        <div class="rangeSlider__quantityNumbers"><strong class="strongMedio">Monto
+                                actual</strong><strong class="strongMedio">Objetivo</strong></div>
+                    </div>
+                    <div class="contImagenesBarraObjetivos__imagen contImagenesBarraObjetivos__imagen--puntero">
+                        <img src="../images/icono-puntero-objetivos.svg" alt="">
+                    </div>
+                    <hr class="barQuestion barQuestion--barraSlider">
+                    <div class="rowFlex">
+                        <div class="col-12">
+                            <img src="../images/icono-puntero-objetivos.svg" alt="">
+                            <h2 class="center line17 regular customerFlex--noMrgn"><strong> El estado al día de hoy
+                                    debería ser: </strong><br>
+                                $110.000.000<strong class="montoSmall"> | 50%</strong></h2>
+                        </div>
+                    </div>
+                </div>
+                <!--footer caja objetivos-->
+                <div class="footerObjetivosDesplegados">
+                    <p class="footerObjetivosdesplegados__texto"> <strong> Los retiros que ha realizado en este
+                            objetivo,</strong><br>
+                        lo están alejando de lograrlo.</p>
+                </div>
+            </div>
+        </div>
+        <!--Fin Caja de los Objetivos desplegados-->
+
+
+        <!--Check Box-->
+        <div class="contentBox contentBox--ajusteBotonMoblie">
+            <div class="contentBoxInv">
+                <img src="../images/icono-bombillo-idea.svg" alt="">
+                <div class="contCabeceraCheckbox">
+                    <img src="../images/iconoerrorobjetivos.svg" alt="">
+                    <p class="contCabeceraChekbox__texto">Tenemos unas <strong>sugerencias para lograr su
+                            objetivo:</strong></p>
+                </div>
+
+                <form id="formTermsConditions">
+                    <div class="input">
+                        <label class="checkbox checkbox--noPadMar">
+                            Aumentar el dinero que aportaría <strong class="noTextDecoration">mensualmente a
+                                $380.000</strong>
+                            <input type="radio" name="termsConditions" id="aumentarDinero" onclick="checkDinero()">
+                            <div class="checkbox__indicator checkbox__indicator--circular"></div>
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <label class="checkbox checkbox--noPadMar">
+                            Realizar un <strong class="noTextDecoration">abono extraordinario $4.700.000</strong>
+                            <input type="radio" name="termsConditions" id="realizarAbono" onclick="checkAbono()">
+                            <div class="checkbox__indicator checkbox__indicator--circular"></div>
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <label class="checkbox checkbox--noPadMar">
+                            Aumentar el tiempo de su inversión a <strong class="noTextDecoration">90 meses</strong>
+                            <input type="radio" name="termsConditions" id="aumentarTiempo" onclick="checkTiempo()">
+                            <div class="checkbox__indicator checkbox__indicator--circular"></div>
+                        </label>
+                    </div>
+
+                    <div class="input">
+                        <label class="checkbox checkbox--noPadMar">
+                            Aumentar el nivel de <strong class="noTextDecoration"> riesgo de su inversión</strong>
+                            <input type="radio" name="termsConditions" id="aumentarRiesgo" onclick="checkRiesgo()">
+                            <div class="checkbox__indicator checkbox__indicator--circular"></div>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Fin checkBox-->
+
+        <!--Boton continuar-->
+        <div class="contButtons contButtons--mrgnInf">
+            <button type="button" class="button button--secondary button--width-customer button--back">Regresar</button>
+            <button type="button" class="button button--secondary button--width-customer"
+                id="validateTermsConditions">Simular</button>
+        </div>
+    </section>
+
+
+    <!--Contenedor del boton flotante-->
+
+    <div class="buttonFooterMobile">
+        <a href="javascript:void(0)" class="support support--trioBotones support--trioBotones--left"
+            onclick="showModal()">
+            <img src="../images/icono-aportesyretiros.svg" alt="Devolver Operacion">
+            <p class="buttonFooterMobile__texto">Aportes y <br>
+                retiros</p>
+        </a>
+
+        <a href="javascript:void(0)" class="support support--trioBotones support--trioBotones--right">
+            <img src="../images/Icono-boton-footer-grafica.svg" alt="Liquidacion">
+            <p class="buttonFooterMobile__texto">Ver detalle <br>
+                de la inversión</p>
+        </a>
+
+        <a href="javascript:void(0)" class="support support--trioBotones support--trioBotones--right">
+            <img src="../images/icono-modificar-condiciones.svg" alt="Liquidacion">
+            <p class="buttonFooterMobile__texto">Modificar <br>
+                condiciones</p>
+        </a>
+    </div>
+
+    <!--Screipt detalles Objetivos-->
+    <script src="../js/main.js">
+    </script>
+
+</body>
+
+</html>

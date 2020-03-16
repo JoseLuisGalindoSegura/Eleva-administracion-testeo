@@ -1,0 +1,70 @@
+.link-image {
+    font-size: 10px;
+    color: $negro-57;
+    text-decoration: underline;
+
+    .link-image--img-download {
+
+        margin-bottom: 0 !important;
+        margin-left: 3px;
+    }
+
+    &.link-image--Top20 {
+        margin-top: 20px;
+    }
+}
+
+.link-image-medium {
+    font-size: $font-p;
+    color: $negro-57;
+    text-decoration: underline;
+
+    &--margin {
+        margin: 15px 0 15px 0;
+    }
+}
+
+//Texto del pie de los iconos en la barra de onjetivos
+.contImagenesBarraObjetivos__texto{
+    font-size: $font-p - 4;
+    position: absolute;
+        &--1{
+            font-size: $font-p;
+            font-weight: 300;
+            color: #575757;
+            top: 77px;
+            left: 69.5%;
+            
+        }
+        &--2{
+            font-size: 14px;
+            font-weight: 300;
+            color: #575757;
+            top: 27px;
+            left: 7px;
+        }
+}
+
+//Texto del contenedor checkbox
+.contCabeceraChekbox__texto{
+    font-size: $font-p;
+    text-align: left;
+    color: #575757;
+    margin: 0 0 0 0;
+    line-height: 16px;
+    strong{
+        font-weight: bold;
+    }
+    }
+
+//Texto en el footer de los objetivos desplegados
+.footerObjetivosdesplegados__texto{
+    font-size: $font-p - 2;
+    line-height: 14px;
+    font-weight: 400;
+    color: $negro-57;
+    margin: 13px 0 0 0;
+    strong{
+         font-weight: bold;
+        }
+    }

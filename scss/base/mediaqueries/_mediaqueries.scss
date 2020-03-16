@@ -1,0 +1,368 @@
+//----------- Mobile
+@media (min-width: 45em) {}
+
+//----------- Phabletpp
+@media (min-width: 50em) {
+  body {
+    background-color: #fff;
+  }
+
+  .dataVivienda {
+    background-color: $gris-ed;
+  }
+
+  .backButton {
+    display: none;
+  }
+
+  .bg-docTitle {
+    position: absolute;
+    top: 35px;
+    right: 33px;
+    z-index: 0;
+  }
+
+  .radio__indicator {
+    &.radio__indicator--top10 {
+      top: 6px;
+    }
+  }
+
+  .button {
+    font-size: $font-p + 4;
+    width: 25%;
+
+    &.button--back {
+      display: inline-block;
+    }
+  }
+
+  .bg-whiteQuestions {
+    background: #ededed5c;
+  }
+
+  .contentBox {
+    padding: 15px;
+    background-color: transparent;
+
+    &--ajusCabecera {
+      padding: 111px 15px 15px 15px;
+    }
+
+    @include prefix((box-shadow: none),
+      webkit moz ms);
+
+    &.contentBox--desktop {
+      padding: 15px;
+      background-color: $blanco-f8;
+      @include prefix((box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.15)),
+        webkit moz ms);
+    }
+
+    &.contentBox--boxConfirm {
+      padding-top: 40px;
+    }
+  }
+
+  form {
+    .input {
+      .radio {
+        &.radio--optionCard {
+          padding: 15px 135px 15px 15px;
+
+          .optionCard__image {
+            width: 110px;
+          }
+
+          .optionCard__info {
+            span {
+              font-size: $font-p;
+            }
+          }
+        }
+      }
+
+      .optionCard__extraInfo {
+        .item {
+
+          span,
+          strong {
+            font-size: $font-p;
+          }
+
+          span.icon {
+            font-size: $font-p - 7 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//----------- Tablet
+@media (min-width: 64em) {}
+
+//----------- laptop
+@media (min-width: 70em) {
+  body {
+    //background-color: yellowgreen;
+  }
+}
+
+//----------- PC
+@media (min-width: 91em) {
+  body {
+    //background-color: royalblue;
+  }
+}
+
+// ------------------------------------------------------------------ Mediaqueries iPhones
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 360px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contentBox {
+    &.contentBox--PdngObj {
+      padding: 15px 15px 24px 15px;
+
+    }
+  }
+
+  .moreTextLong {
+    transform: translate(7px, 10px);
+  }
+
+  .buttonTooltip {
+    &.buttonTooltip--range {
+      transform: translate(16px, 45px);
+    }
+  }
+
+  label .item-seleccionado {
+    font-size: 10px;
+  }
+
+  .contButtons{
+    .button {
+      width: 62%;
+      font-size: 14px;
+
+      &--width-customer {
+        width: 42%;
+      }
+    }
+  }
+
+  .contentBox {
+    padding: 15px 8px;
+
+    &--ajusCabecera {
+      padding: 77px 8px 15px 8px;
+    }
+  }
+
+  .row {
+    .col {
+      .content {
+        .contentIcon {
+          width: 30px;
+          height: 30px;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  img.imagenGrafica {
+    width: 88%;
+  }
+
+  .rowInv {
+    width: 255px;
+  }
+
+  .circle-percentage {
+    transform: translateX(60%);
+  }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .contentBox {
+    padding: 15px 15px 24px 15px;
+
+    &--ajusCabecera {
+      padding: 90px 15px 24px 15px;
+
+    }
+
+    &--noPadding {
+      padding: 0px;
+    }
+
+    &--contDetallesConsolidados {
+      width: 100%;
+      background: #fdfdfd;
+      margin: 0 0 15px 0;
+      padding: 15px 13px 15px 13px;
+    }
+    &--sinEstilos{
+      padding: 15px 0 15px 0;
+    }
+
+  }
+
+  .row {
+    .col {
+      .content {
+        .contentIcon {
+          width: 37px;
+          height: 37px;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .contentBox {
+    &.contentBox--PdngObj {
+      padding: 15px 25px 0;
+    }
+
+    .moreTextLong {
+      transform: translate(7px, 2px);
+    }
+  }
+
+  img.imagenGrafica {
+    width: 88%;
+  }
+
+  .rowInv {
+    width: 289px;
+  }
+
+  label .item-seleccionado {
+    font-size: 12px;
+  }
+
+  .button {
+    width: 52%;
+
+    &--width-customer {
+      width: 44%;
+    }
+  }
+
+  .circle-percentage {
+    transform: translateX(80%) !important;
+  }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) and (-webkit-min-device-pixel-ratio: 3) {
+
+  .support {
+
+    &--duoBotones {
+      height: 87px;
+    }
+
+    &--trioBotones {
+      height: 87px;
+    }
+  }
+
+  .container {
+    &--aireBotMobile {
+      margin: 0 auto 106px auto;
+    }
+  }
+
+  .buttonFooterMobile__texto {
+    font-size: $font-p - 2;
+    color: $negro-44;
+    margin: 4px 0 20px 0;
+    font-weight: 400;
+  }
+}
+
+
+
+// ------------------------------------------------------------------ Mediaqueries Casos Especiales
+
+
+@media (min-width:375px) and (max-width: 600px) {
+  .contButtons {
+    .button {
+      font-size: 17px
+    }
+  }
+
+  .contCanguroMain {
+    .containerCanguro {
+      .contButtons {
+        &.contButtons--sameWidth {
+          .button {
+            font-size: 3.5vw;
+          }
+        }
+      }
+    }
+  }
+
+  body {
+    //background-color: royalblue;
+  }
+}
+
+//Mediaquerie ajustando cards
+@media (max-width: 430px) {
+  .container {
+    .container--intBackGray {
+      padding: 10px;
+    }
+  }
+
+  form {
+    .input {
+      .radio {
+        &.radio--optionCard {
+          padding: 10px 70px 10px 10px;
+
+          .optionCard__image {
+            width: 50px;
+          }
+
+          .optionCard__info {
+            span {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//modifica el reloj de la pantalla 12
+
+@media (max-height: 700px) {
+  .contStudyProcess {
+    .clockAnimation {
+      width: 70%;
+      max-width: 210px;
+    }
+  }
+}

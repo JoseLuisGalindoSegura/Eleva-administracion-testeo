@@ -1,0 +1,115 @@
+//Tooltips | Buttons and Tooltips
+//Button
+.buttonTooltip {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 15px;
+    transform: translateY(-50%);
+
+    &.buttonTooltip--transformTraslate100 {
+        transform: translateY(-100%);
+    }
+
+    span {
+        font-size: $font-p + 1 !important;
+    }
+
+    &:hover~.tooltip {
+        opacity: 1 !important;
+    }
+    
+    //Se agrega esta clase para arreglar el problema del hover en iOs...
+
+    &:focus~.tooltip {
+        opacity: 1 !important;
+    }
+
+    &.buttonTooltip--textLong {
+        transform: translate(-44%, 22%);
+        right: 0;
+    }
+
+    &.buttonTooltip--range {
+        transform: translate(16px, 45px);
+
+    }
+
+    &.buttonTooltip--textLongTwo {
+        transform: translate(-44%, 68%);
+        right: 0;
+    }
+
+    &.buttonTooltip--small {
+        width: 6px;
+        transform: translate(14px, 2px);
+        position: relative;
+    }
+
+    //Posicionamiento
+    &--textPosition {
+        position: relative;
+        top: 2px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: inherit;
+    }
+}
+
+//Tooltip General
+.tooltip {
+    display: inline-block;
+    width: 80%;
+    max-width: 350px;
+    background-color: $gris-cc;
+    border-radius: 6px;
+    padding: 15px;
+    z-index: 9;
+    text-align: justify;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    transition-duration: .2s;
+
+    opacity: 0;
+    pointer-events: none;
+
+    p {
+        font-size: $font-p - 2;
+        font-family: $roboto;
+        line-height: 1.3;
+        color: $negro-00;
+        font-weight: 400;
+    }
+
+    //Pendiente para borrar - hay que testear
+    &--top {
+        transform: translateY(12%);
+    }
+
+    &--moreTop {
+        transform: translateY(-115%);
+    }
+
+    &--fullWidth {
+        width: 100%;
+    }
+
+    &.tooltip--rangeSlider {
+        width: 282px;
+        position: relative;
+        left: 0;
+        transform: translate(-86%, -41%);
+        z-index: 27;
+    }
+}

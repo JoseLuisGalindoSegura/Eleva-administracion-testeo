@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Davivienda S.A.</title>
+</head>
+
+<body ontouchstart>
+  <section class="container">
+    <!-- Botón "atrás" Mobile -->
+    <a href="javascript:void(0)" class="backButton">
+      <span class="icon-dv-btnBack"></span>
+      Atrás
+    </a>
+    <!-- Fin Botón "atrás" Mobile -->
+
+    <div class="contentBox contentBox--retiros">
+      <div class="benefits__container">
+        <div class="benefits__item benefits__item--fondoBlanco">
+          <div class="marcaDeAgua"></div> 
+          <p>Monto actual de su objetivo de inversión:<br> <strong>$84.800.000</strong></p>
+        </div>
+      </div>
+      <form action="">
+        <div class="input">
+          <p class="input__cabeceraInput">Seleccione el tipo de movimiento que desea realizar</p>
+          <select name="periodo" id="periodo" required onchange="ShowSelected();">
+            <option value="" disabled selected >Seleccione una opción</option>
+            <option value="1">Retiro</option>
+            <option value="2">Aporte Extraordinario</option>
+          </select>
+        </div>
+      </form>
+      <div class="detallesPeriodosShow detallesPeriodosShow--tamañoMovimiento detallesPeriodosShow--none" id="detPeriodo">
+        <!--Contenedor de los detalles del periodo-->
+        <div class="ConTexto ConTexto--cabeceraMovimientos">
+          <p class="ConTexto_cabecera">Tenga en cuenta que esta transacción puede <strong>afectar
+            las condiciones de su objetivo de inversión</strong> </p>
+        </div>
+
+        <!-- inuputs deplegados -->
+        <form action="">
+
+          <!--input1-->
+        <div class="input">
+          <p class="input__cabeceraInput input__cabeceraInput--margenTop ">¿Cuánto dinero desea retirar de su objetivo?</p>
+          <input class="input__sinOpacity" type="text" placeholder="Ingrese un valor">
+          
+          <!--input2-->
+          <div class="input">
+            <p class="input__cabeceraInput input__cabeceraInput--margenTop">¿A cuál producto desea transladar el dinero?</p>
+            <select name="cuenta" required>
+              <option value="" disabled selected>Seleccione una opción</option>
+              <option value="1">Cta. Ahorros **** 4578</option>
+              <option value="2">Cta. Ahorros **** 1248</option>
+              <option value="3">Cta. Ahorros **** 6797</option>
+            </select>
+
+            <!--input3-->
+            <div class="input">
+              <p class="input__cabeceraInput input__cabeceraInput--margenTop">El dinero de su retiro saldrá primero de:</p>
+              <select name="aporte" id="aporte" required onchange="changeButton();">
+                <option value="" disabled selected >Seleccione una opción</option>
+                <option value="1">Sus aportes exentos de retención</option>
+                <option value="2">Sus aportes más antiguo a más recientes</option>
+              </select>
+      </div>
+    </form>
+    </div>
+  </section>
+  <section class="container" >
+    <div class="contentBox contentBox--sinEstilos">
+      <p>¿Desea <strong>conocer cómo esta transacción modifica</strong> su
+        objetivo ó desea continuar <strong> con la transacción?</strong></p>
+    </div>
+    <div class="contButtons contButtons--sameWidth">
+      <button type="button" class="button button--secondary">Ver modificación</button>
+      <button type="button" id="continuar" class="button button--secondary">Continuar</button>
+  </div>
+  </section>
+
+  <!--Screipt detalles Objetivos-->
+  <script src="../js/inversion.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
